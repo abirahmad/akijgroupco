@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { FaFacebook, FaTwitter, FaGoogle, FaPinterest, FaPhone, FaEnvelope, FaUser, FaGooglePlus } from "react-icons/fa";
 
 const Header = () => {
     const [isNavOpen, setIsNavOpen] = useState(false);
@@ -7,6 +8,42 @@ const Header = () => {
 
     return (
         <header className="header-area">
+            <div className="hidden sm:flex justify-between items-center py-3 px-6 bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md">
+                <div className="flex space-x-6">
+                    <a href="tel:+1234567890" className="flex items-center hover:text-yellow-300">
+                        <FaPhone className="mr-2" />
+                        +1234567890
+                    </a>
+                    <a href="mailto:info@yourmail.com" className="flex items-center hover:text-yellow-300">
+                        <FaEnvelope className="mr-2" />
+                        info@yourmail.com
+                    </a>
+                </div>
+                <nav className="flex items-center space-x-6">
+                    <a href="#" className="flex items-center hover:text-yellow-300">
+                        <FaUser className="mr-2" />
+                        Login
+                    </a>
+                    <ul className="hidden md:flex space-x-4">
+                        <li>
+                            <a href="https://www.facebook.com/fh5co" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
+                                <FaFacebook />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="hover:text-yellow-300">
+                                <FaGooglePlus />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className="hover:text-yellow-300">
+                                <FaTwitter />
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
             <div id="sticker" className="bg-white shadow-md">
                 <div className="container mx-auto px-4 py-4 flex sm:justify-between sm:items-center">
                     <div className="flex items-center">
