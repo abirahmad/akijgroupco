@@ -19,7 +19,7 @@ const Carousel = () => {
         <div id="home" className="slider-area">
             <Slider {...settings}>
                 <div className="relative">
-                    <Image src="/slider1.jpg" alt="Slider 2" width={1920} height={800} />
+                    <Image src="/slider1.jpg" alt="Slider 2" width={1920} height={800} className="w-full h-full" />
                     <div className="absolute inset-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-50">
                         <h2 className="title1 md:text-sm lg:text-4xl font-bold text-white">The Best Business Information</h2>
                         <h1 className="title2 md:text-sm lg:text-5xl font-bold text-white">We are In The Business Of Helping You Start Your Business</h1>
