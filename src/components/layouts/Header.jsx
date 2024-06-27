@@ -72,7 +72,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#about">
+                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="/about">
                                     About
                                 </a>
                             </li>
@@ -96,7 +96,7 @@ const Header = () => {
                                     onClick={() => setIsDropdownOpen(!isDropdownOpen)}
                                     className="text-gray-700 hover:text-blue-500"
                                 >
-                                    Drop Down
+                                    Other Companies
                                     <span className="caret"></span>
                                 </button>
                                 <ul className={`dropdown-menu absolute bg-white shadow-lg z-50 ${isDropdownOpen ? '' : 'hidden'}`}>
