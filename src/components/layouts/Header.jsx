@@ -67,7 +67,7 @@ const Header = () => {
                     <nav className={`navbar-collapse lg:flex ${isNavOpen ? '' : 'hidden'}`}>
                         <ul className="nav flex flex-col lg:flex-row items-center lg:space-x-4">
                             <li className="active">
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#home">
+                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="/">
                                     Home
                                 </a>
                             </li>
@@ -118,7 +118,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#contact">
+                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="/contact">
                                     Contact
                                 </a>
                             </li>

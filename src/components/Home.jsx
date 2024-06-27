@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
-
+import Slider from "../components/layouts/Slider";
 export default function Home() {
 
     const [filter, setFilter] = useState('*');
@@ -22,6 +22,7 @@ export default function Home() {
     const filteredItems = filter === '*' ? portfolioItems : portfolioItems.filter(item => item.category.includes(filter));
     return (
         <>
+         <Slider />
             <div className="bg-gray-200 py-8">
                 <div className="container mx-auto">
                     <div className="text-center mb-8">
