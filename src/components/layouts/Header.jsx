@@ -77,11 +77,6 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#services">
-                                    Services
-                                </a>
-                            </li>
-                            <li>
                                 <a className="page-scroll text-gray-700 hover:text-blue-500" href="#team">
                                     Team
                                 </a>
@@ -101,20 +96,32 @@ const Header = () => {
                                 </button>
                                 <ul className={`dropdown-menu absolute bg-white shadow-lg z-50 ${isDropdownOpen ? '' : 'hidden'}`}>
                                     <li>
-                                        <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
-                                            Drop Down 1
+                                        <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="https://www.akijjute.com/" target='__blank'>
+                                            Akij Jute
                                         </a>
                                     </li>
                                     <li>
-                                        <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="#">
-                                            Drop Down 2
+                                        <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="https://www.akijplastics.com/" target='__blank'>
+                                            Akij Plastics
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="https://www.akijpipes.com/" target='__blank'>
+                                            Akij Pipes
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a className="block px-4 py-2 text-gray-700 hover:bg-gray-100" href="https://www.akijmatch.com/" target='__blank'>
+                                            Akij Match
                                         </a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
                                 <a className="page-scroll text-gray-700 hover:text-blue-500" href="#blog">
-                                    Blog
+                                    News & Event
                                 </a>
                             </li>
                             <li>
