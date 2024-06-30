@@ -158,7 +158,7 @@ export default function Home() {
                     <div className="text-center mb-12">
                         <h2 className="text-3xl font-semibold">About Our Units</h2>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:m-4 gap-6">
                         {/* Post 1 */}
                         <div className="p-6 bg-white rounded-lg shadow-md flex flex-col md:flex-row md:items-center">
                             <div className="md:w-1/3 mb-4 md:mb-0">
