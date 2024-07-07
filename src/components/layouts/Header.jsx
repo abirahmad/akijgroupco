@@ -77,13 +77,13 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#team">
-                                    Team
+                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="/brands">
+                                    Brands
                                 </a>
                             </li>
                             <li>
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#portfolio">
-                                    Portfolio
+                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#blog">
+                                    News & Event
                                 </a>
                             </li>
                             <li className="relative">
@@ -120,8 +120,8 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li>
-                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="#blog">
-                                    News & Event
+                                <a className="page-scroll text-gray-700 hover:text-blue-500" href="/contact">
+                                    Career
                                 </a>
                             </li>
                             <li>

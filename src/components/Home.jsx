@@ -2,8 +2,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Slider from "../components/layouts/Slider";
-export default function Home() {
-
+export default function Home({ product }) {
+    console.log('product', product)
     const [filter, setFilter] = useState('*');
 
     const handleFilter = (category) => {
@@ -22,7 +22,7 @@ export default function Home() {
     const filteredItems = filter === '*' ? portfolioItems : portfolioItems.filter(item => item.category.includes(filter));
     return (
         <>
-         <Slider />
+            <Slider />
             <div className="bg-gray-200 py-8">
                 <div className="container mx-auto">
                     <div className="text-center mb-8">
@@ -76,6 +76,35 @@ export default function Home() {
                     </ul>
                 </div>
             </div>
+
+            <section id="content" className="py-12 bg-gray-100 shadow-lg">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-wrap md:flex-nowrap">
+                        <div className="w-full md:w-1/2 md:mb-0">
+                            <h2 className="text-3xl font-bold text-gray-800">Founder's <strong>Message</strong></h2>
+                            <p className="mt-4 text-gray-600">
+                                Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
+                            </p>
+                            <p className="mt-4 text-gray-600">
+                                Iudico definiebas eos ea, dicat inermis hendrerit vel ei, legimus copiosae quo at. Per utinam corrumpit prodesset te, liber praesent eos an. An prodesset neglegentur qui, usu ancillae posidonium in, mea ex eros animal scribentur. Et simul fabellas sit.
+                                Populo inimicus ne est.
+                            </p>
+                            <p className="mt-4 text-gray-600">
+                                Alii wisi phaedrum quo te, duo cu alia neglegentur. Quo nonumy detraxit cu, viderer reformidans ut eos, lobortis euripidis posidonium et usu. Sed meis bonorum minimum cu, stet aperiam qualisque eu vim, vide luptatum ei nec. Ei nam wisi labitur mediocrem.
+                                Nam saepe appetere ut, veritus graecis minimum no vim. Vidisse impedit id per.
+                            </p>
+                        </div>
+                        <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
+                            <div className="flex flex-col items-center md:items-end w-full px-2 mb-4">
+                                <img src="/akijuddin.jpg" alt="Founder's Image" className="w-full rounded-lg shadow-md" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
 
             {/* Portfolio */}
             <div id="portfolio" className="bg-gray-100 py-12">

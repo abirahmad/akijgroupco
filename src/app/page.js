@@ -4,10 +4,19 @@ import Footer from "../components/layouts/Footer";
 import Index from "../components/Home";
 import Image from "next/image";
 
-export default function Home() {
+export default async function Home() {
+
+  const products =await fetchProducts();
+  console.log('products', products)
   return (
    <>
-     <Index/>
+     <Index product={products}/>
    </>
   );
+}
+
+async function fetchProducts(){
+  const productsResponse = await fetch(`https://randomuser.me/api/`);
+  return productsResponse.json();
+
 }
