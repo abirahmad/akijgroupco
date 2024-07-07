@@ -22,25 +22,25 @@ const AboutSection = () => (
                     <div className="xl:w-1/2 lg:w-1/3 md:w-full mt-8 lg:mt-0">
                         <div className="grid grid-cols-2 gap-4">
                             <div className="relative overflow-hidden rounded-lg shadow-md group">
-                                <img className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post1.jpg" alt="Gallery Image" />
+                                <Image className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post1.jpg" alt="Gallery Image" />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
                                     <i className="text-white fa fa-caret-right text-3xl"></i>
                                 </div>
                             </div>
                             <div className="relative overflow-hidden rounded-lg shadow-md group">
-                                <img className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post2.jpg" alt="Gallery Image" />
+                                <Image className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post2.jpg" alt="Gallery Image" />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
                                     <i className="text-white fa fa-caret-right text-3xl"></i>
                                 </div>
                             </div>
                             <div className="relative overflow-hidden rounded-lg shadow-md group">
-                                <img className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post3.jpg" alt="Gallery Image" />
+                                <Image className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post3.jpg" alt="Gallery Image" />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
                                     <i className="text-white fa fa-caret-right text-3xl"></i>
                                 </div>
                             </div>
                             <div className="relative overflow-hidden rounded-lg shadow-md group">
-                                <img className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post4.jpg" alt="Gallery Image" />
+                                <Image className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post4.jpg" alt="Gallery Image" />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
                                     <i className="text-white fa fa-caret-right text-3xl"></i>
                                 </div>
