@@ -96,7 +96,7 @@ export default function Home({ product }) {
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
                             <div className="flex flex-col items-center md:items-end w-full px-2 mb-4">
-                                <img src="/akijuddin.jpg" alt="Founder's Image" className="w-full rounded-lg shadow-md" />
+                                <Image src="/akijuddin.jpg" alt="Founders Image" className="w-full rounded-lg shadow-md" />
                             </div>
                         </div>
                     </div>
