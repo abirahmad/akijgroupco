@@ -77,7 +77,7 @@ const AboutSection = () => (
                                 </div>
                             </div>
                             <div className="relative overflow-hidden rounded-lg shadow-md group">
-                                <img className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post4.jpg" alt="About Us" loading="lazy" srcSet="/post4.jpg 320w, /post4.jpg 640w, /post4.jpg 1280w" sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 1280px"  />
+                                <img className="w-full h-auto transform scale-100 group-hover:scale-105 transition duration-300" src="/post4.jpg" alt="About Us" loading="lazy" srcSet="/post4.jpg 320w, /post4.jpg 640w, /post4.jpg 1280w" sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 1280px" />
                                 <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
                                     <i className="text-white fa fa-caret-right text-3xl"></i>
                                 </div>
