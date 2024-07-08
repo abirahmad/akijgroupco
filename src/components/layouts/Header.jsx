@@ -10,6 +10,7 @@ import {
   FaUser,
   FaGooglePlus,
 } from "react-icons/fa";
+import Link from "next/link";
 
 const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -92,36 +93,36 @@ const Header = () => {
           >
             <ul className="nav flex flex-col lg:flex-row items-center lg:space-x-4">
               <li className="active">
-                <a
+                <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
                   href="/"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
                   href="/about"
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
                   href="/brands"
                 >
                   Brands
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
                   href="/news-events"
                 >
                   News & Event
-                </a>
+                </Link>
               </li>
               <li className="relative">
                 <button
@@ -137,60 +138,60 @@ const Header = () => {
                   }`}
                 >
                   <li>
-                    <a
+                    <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href="https://www.akijjute.com/"
                       target="__blank"
                     >
                       Akij Jute
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href="https://www.akijplastics.com/"
                       target="__blank"
                     >
                       Akij Plastics
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href="https://www.akijpipes.com/"
                       target="__blank"
                     >
                       Akij Pipes
-                    </a>
+                    </Link>
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
                       href="https://www.akijmatch.com/"
                       target="__blank"
                     >
                       Akij Match
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
               <li>
-                <a
+                <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
                   href="/contact"
                 >
                   Career
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
                   href="/contact"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
