@@ -16,7 +16,7 @@ const Carousel = () => {
     };
 
     return (
-        <div id="home" className="slider-area">
+        <div id="home" className="slider-area overflow-hidden">
             <Slider {...settings}>
                 <div className="relative">
                     <Image src="/slider1.jpg" alt="Slider 2" width={1920} height={800} className="w-full h-full" />
