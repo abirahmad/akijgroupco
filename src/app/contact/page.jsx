@@ -19,32 +19,34 @@ export default function contact() {
                                 <div className="single-icon">
                                     <FaMobile className="text-4xl mx-auto" />
                                     <p className="mt-2">
-                                        Call: +1 5589 55488 55<br />
-                                        <span className="text-gray-500">Monday-Friday (9am-5pm)</span>
+                                        Call: <a href="tel:+155895548855" className="text-blue-500 hover:underline">+1 5589 55488 55</a><br />
+                                        <span className="text-gray-500">Saturday-Thursday (9am-6pm)</span>
                                     </p>
                                 </div>
                             </div>
                         </div>
+
                         {/* Start contact icon column */}
                         <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
                             <div className="contact-icon text-center">
                                 <div className="single-icon">
                                     <FaRegEnvelope className="text-4xl mx-auto" />
                                     <p className="mt-2">
-                                        Email: info@example.com<br />
-                                        <span className="text-gray-500">Web: www.example.com</span>
+                                        Email: <a href="mailto:info@example.com" className="text-blue-500 hover:underline">info@example.com</a><br />
+                                        <span className="text-gray-500">Web: <a href="https://www.akijgroup.co" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">www.example.com</a></span>
                                     </p>
                                 </div>
                             </div>
                         </div>
+
                         {/* Start contact icon column */}
                         <div className="w-full sm:w-1/2 lg:w-1/3 p-4">
                             <div className="contact-icon text-center">
                                 <div className="single-icon">
                                     <FaLocationArrow className="text-4xl mx-auto" />
                                     <p className="mt-2">
-                                        Location: A108 Adam Street<br />
-                                        <span className="text-gray-500">NY 535022, USA</span>
+                                        Location: Mir Sawkat Sarak, Tejgaon<br />
+                                        <span className="text-gray-500">Dhaka 1205, Bangladesh</span>
                                     </p>
                                 </div>
                             </div>
