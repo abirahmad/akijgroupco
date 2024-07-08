@@ -34,6 +34,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
@@ -54,6 +55,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
@@ -74,6 +76,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
@@ -94,6 +97,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
@@ -114,6 +118,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
@@ -134,6 +139,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
@@ -154,26 +160,7 @@ export default function page() {
         </div>
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
-            className="w-full h-48 object-cover"
-            src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
-            alt="News Event Image"
-          />
-          <div className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800">
-              News Event Title
-            </h2>
-            <p className="mt-2 text-gray-600">
-              This is a short description of the news event.
-            </p>
-            <div className="mt-4">
-              <span className="text-sm text-gray-600">
-                Published on: July 8, 2024
-              </span>
-            </div>
-          </div>
-        </div>
-        <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
-          <img
+            onClick={() => handleGoToDetails()}
             className="w-full h-48 object-cover"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
