@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import Slider from "../components/layouts/Slider";
+import MessageSlider from 'react-slick';
 export default function Home({ product }) {
     console.log('product', product)
     const [filter, setFilter] = useState('*');
@@ -19,7 +20,50 @@ export default function Home({ product }) {
         { id: 6, category: 'akijplastics', title: 'Beautiful Nature', image: '/plastic2.jpg', description: 'Akij Plastics' },
     ];
 
+    const boardMembers = [
+        {
+            name: "John Doe",
+            position: "Chairman",
+            message: "Welcome to our website. We are committed to excellence.",
+            image: "/chairman.jpg"
+        },
+        {
+            name: "Jane Smith",
+            position: "CEO",
+            message: "Our mission is to innovate and lead in our industry.",
+            image: "/user2.webp"
+        },
+        {
+            name: "Bob Johnson",
+            position: "CFO",
+            message: "We ensure financial stability and growth.",
+            image: "/user2.webp"
+        },
+        {
+            name: "Alice Williams",
+            position: "COO",
+            message: "Operational excellence is our top priority.",
+            image: "/user2.webp"
+        },
+        {
+            name: "Charlie Brown",
+            position: "CTO",
+            message: "We leverage technology to drive our success.",
+            image: "/user2.webp"
+        }
+    ];
+
     const filteredItems = filter === '*' ? portfolioItems : portfolioItems.filter(item => item.category.includes(filter));
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000
+    };
     return (
         <>
             <Slider />
@@ -271,6 +315,26 @@ export default function Home({ product }) {
                             See More <i className="fa fa-arrow-right ml-2"></i>
                         </a>
                     </div>
+                </div>
+            </section>
+
+            <section className="py-12 bg-gray-100">
+                <div className="container mx-auto">
+                    <h2 className="text-3xl font-bold text-center mb-8">Board Member Messages</h2>
+                    <MessageSlider {...settings}>
+                        {boardMembers.map((member, index) => (
+                            <div key={index} className="flex justify-center p-6">
+                                <div className="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                                <img src={member.image} alt={member.name} className="w-28 h-28 object-cover rounded-full mx-auto mt-4" />
+                                    <div className="p-6">
+                                        <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                                        <p className="text-gray-600 mb-4">{member.position}</p>
+                                        <p className="text-gray-700">{member.message}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </MessageSlider>
                 </div>
             </section>
         </>
