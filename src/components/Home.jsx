@@ -319,7 +319,7 @@ export default function Home({ product }) {
             </section>
 
             <section className="py-12 bg-gray-100">
-                <div className="container mx-auto">
+                <div className="container mx-auto overflow-hidden">
                     <h2 className="text-3xl font-bold text-center mb-8">Board Member Messages</h2>
                     <MessageSlider {...settings}>
                         {boardMembers.map((member, index) => (

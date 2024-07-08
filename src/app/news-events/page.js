@@ -8,13 +8,13 @@ export default function page() {
   return (
     <div className="w-[90%] mx-auto bg-white mt-10 p-6 rounded-lg shadow-lg">
       <h1 className="text-center text-5xl font-bold text-gray-800">
-        News & Media
+        News & Medial
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mt-10">
         <div className="max-w-sm mx-auto bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
           <img
             onClick={() => handleGoToDetails()}
-            className="w-full h-48 object-cover"
+            className="w-full h-auto object-cover curd"
             src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
             alt="News Event Image"
           />
