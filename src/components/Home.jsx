@@ -81,7 +81,7 @@ export default function Home({ product }) {
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap md:flex-nowrap">
                         <div className="w-full md:w-1/2 md:mb-0">
-                            <h2 className="text-3xl font-bold text-gray-800">Founder's <strong>Message</strong></h2>
+                            <h2 className="text-3xl font-bold text-gray-800">Founder <strong>Message</strong></h2>
                             <p className="mt-4 text-gray-600">
                                 Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
                             </p>
@@ -96,7 +96,7 @@ export default function Home({ product }) {
                         </div>
                         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
                             <div className="flex flex-col items-center md:items-end w-full px-2 mb-4">
-                                <Image src="/akijuddin.jpg" alt="Founders Image" className="w-full rounded-lg shadow-md" />
+                                <img src="/akijuddin.jpg" alt="Founders Image" className="w-full rounded-lg shadow-md" />
                             </div>
                         </div>
                     </div>
