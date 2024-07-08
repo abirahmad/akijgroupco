@@ -55,7 +55,7 @@ const Footer = () => {
                             &copy; Copyright <strong>Akij Group</strong>. All Rights Reserved
                         </p>
                         <p className="text-gray-500 mt-2">
-                            Designed by <a href="https://bootstrapmade.com/" className="text-indigo-500">BootstrapMade</a>
+                            Designed by <a href="https://www.akijgroup.co/" target="__blank" className="text-indigo-500">Akij Group Software Team</a>
                         </p>
                     </div>
                 </div>
