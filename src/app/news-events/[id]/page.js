@@ -2,8 +2,8 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="bg-gray-100 text-gray-800 w-[90%] mx-auto grid grid-cols-12 gap-2 mt-2  ">
-      <div className="container mx-auto p-4 mt-2  col-span-8">
+    <div className="bg-gray-100 text-gray-800 w-full mx-auto grid grid-cols-1 md:grid-cols-12 gap-4 mt-2 p-4">
+      <div className="md:col-span-8">
         {/* Main News Article */}
         <article className="bg-white p-6 rounded-lg shadow-md mb-6">
           <img
@@ -12,15 +12,15 @@ export default function page() {
             className="w-full h-64 object-cover rounded-lg mb-4"
           />
           <h2 className="text-3xl font-bold mb-2">Main News Title</h2>
-          <p className="text-gray-600 mb-4  text-xs ">
-            by Author Name on Created Date
+          <p className="text-gray-600 mb-4 text-xs">
+            by Author Name on 2024-07-02
           </p>
-          <p className="leading-relaxed  mb-4 text-sm ">
+          <p className="leading-relaxed mb-4 text-sm">
             This is the detailed content of the main news article. It can be
             multiple paragraphs long and include any necessary details about the
             news.
           </p>
-          <p className="leading-relaxed  text-sm text-justify">
+          <p className="leading-relaxed text-sm text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
             veniam, vel amet, ut earum provident, consectetur expedita similique
             modi recusandae quisquam voluptates. Quisquam quasi animi
@@ -84,75 +84,73 @@ export default function page() {
         {/* Other News List */}
       </div>
 
-      <div class="bg-white  p-4 mt-6  rounded-lg shadow-md col-span-4">
-        <h3 class="text-2xl font-bold mb-4">Other News</h3>
+      <div className="bg-white p-4 rounded-lg shadow-md md:col-span-4">
+        <h3 className="text-2xl font-bold mb-4">Other News</h3>
         <ul>
-          <li class="border-b border-gray-200 shadow-md p-2">
+          <li className="border-b border-gray-200 shadow-md p-2 mb-4">
             <img
               src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
               alt="Main News Image"
-              className="w-full  h-32 object-cover rounded-lg mb-4"
+              className="w-full h-32 object-cover rounded-lg mb-4"
             />
             <a
               href="link-to-news-1"
-              class="text-xl font-semibold text-blue-600 hover:underline"
+              className="text-xl font-semibold text-blue-600 hover:underline"
             >
               Other News Title 1
             </a>
-            <p class="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm">
               A brief description of other news article 1.
             </p>
           </li>
-          <li class="border-b border-gray-200 shadow-md p-2">
+          <li className="border-b border-gray-200 shadow-md p-2 mb-4">
             <img
               src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
               alt="Main News Image"
-              className="w-full  h-32 object-cover rounded-lg mb-4"
+              className="w-full h-32 object-cover rounded-lg mb-4"
             />
             <a
               href="link-to-news-1"
-              class="text-xl font-semibold text-blue-600 hover:underline"
+              className="text-xl font-semibold text-blue-600 hover:underline"
             >
               Other News Title 1
             </a>
-            <p class="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm">
               A brief description of other news article 1.
             </p>
           </li>
-          <li class="border-b border-gray-200 shadow-md p-2">
+          <li className="border-b border-gray-200 shadow-md p-2 mb-4">
             <img
               src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
               alt="Main News Image"
-              className="w-full  h-32 object-cover rounded-lg mb-4"
+              className="w-full h-32 object-cover rounded-lg mb-4"
             />
             <a
               href="link-to-news-1"
-              class="text-xl font-semibold text-blue-600 hover:underline"
+              className="text-xl font-semibold text-blue-600 hover:underline"
             >
               Other News Title 1
             </a>
-            <p class="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm">
               A brief description of other news article 1.
             </p>
           </li>
-          <li class="border-b border-gray-200 shadow-md p-2">
+          <li className="border-b border-gray-200 shadow-md p-2 mb-4">
             <img
               src="https://today.thefinancialexpress.com.bd/uploads/1510675443.jpg"
               alt="Main News Image"
-              className="w-full  h-32 object-cover rounded-lg mb-4"
+              className="w-full h-32 object-cover rounded-lg mb-4"
             />
             <a
               href="link-to-news-1"
-              class="text-xl font-semibold text-blue-600 hover:underline"
+              className="text-xl font-semibold text-blue-600 hover:underline"
             >
               Other News Title 1
             </a>
-            <p class="text-gray-600 text-sm">
+            <p className="text-gray-600 text-sm">
               A brief description of other news article 1.
             </p>
           </li>
-          
-          
         </ul>
       </div>
     </div>
