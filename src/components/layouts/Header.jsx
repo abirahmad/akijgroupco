@@ -94,7 +94,7 @@ const Header = () => {
             <ul className="nav flex flex-col lg:flex-row items-center lg:space-x-4">
               <li className="active">
                 <Link
-                  className="page-scroll text-gray-700 hover:text-blue-500"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
                   href="/"
                 >
                   Home
@@ -102,7 +102,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-blue-500"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
                   href="/about"
                 >
                   About
@@ -110,7 +110,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-blue-500"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
                   href="/brands"
                 >
                   Brands
@@ -118,61 +118,15 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-blue-500"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
                   href="/news-events"
                 >
                   News & Event
                 </Link>
               </li>
-              <li className="relative">
-                <ul
-                  className={`dropdown-menu absolute bg-white shadow-lg z-50 ${
-                    isDropdownOpen ? "" : "hidden"
-                  }`}
-                >
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href="https://www.akijjute.com/"
-                      target="__blank"
-                    >
-                      Akij Jute
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href="https://www.akijplastics.com/"
-                      target="__blank"
-                    >
-                      Akij Plastics
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href="https://www.akijpipes.com/"
-                      target="__blank"
-                    >
-                      Akij Pipes
-                    </Link>
-                  </li>
-
-                  <li>
-                    <Link
-                      className="block px-4 py-2 text-gray-700 hover:bg-gray-100"
-                      href="https://www.akijmatch.com/"
-                      target="__blank"
-                    >
-                      Akij Match
-                    </Link>
-                  </li>
-                </ul>
-              </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-blue-500"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
                   href="/career"
                 >
                   Career
@@ -180,13 +134,14 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-blue-500"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
                   href="/contact"
                 >
                   Contact
                 </Link>
               </li>
             </ul>
+
           </nav>
         </div>
       </div>
