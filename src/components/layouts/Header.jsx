@@ -17,7 +17,7 @@ const Header = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <header className="header-area">
+    <header className="sticky top-0 z-50 header-area">
       <div className="hidden sm:flex justify-between items-center py-3 px-6 bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md">
         <div className="flex space-x-6">
           <a
@@ -84,7 +84,7 @@ const Header = () => {
             >
               <h1 className="text-2xl font-bold">
                 <span className="text-blue-500">Akij</span>
-                <span className="text-black">Groups</span>
+                <span className="text-black">Group</span>
               </h1>
             </a>
           </div>
@@ -125,13 +125,6 @@ const Header = () => {
                 </Link>
               </li>
               <li className="relative">
-                <button
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                  className="text-gray-700 hover:text-blue-500"
-                >
-                  Other Companies
-                  <span className="caret"></span>
-                </button>
                 <ul
                   className={`dropdown-menu absolute bg-white shadow-lg z-50 ${
                     isDropdownOpen ? "" : "hidden"

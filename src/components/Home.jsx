@@ -67,6 +67,54 @@ export default function Home({ product }) {
     return (
         <>
             <Slider />
+
+
+            <section className="py-12 bg-gray-100">
+                <div className="container mx-auto overflow-hidden">
+                    <h2 className="text-3xl font-bold text-center mb-8">Board Member Messages</h2>
+                    <MessageSlider {...settings}>
+                        {boardMembers.map((member, index) => (
+                            <div key={index} className="flex justify-center p-6">
+                                <div className="bg-white rounded-lg shadow-md overflow-hidden text-center">
+                                    <img src={member.image} alt={member.name} className="w-28 h-28 object-cover rounded-full mx-auto mt-4" />
+                                    <div className="p-6">
+                                        <h3 className="text-xl font-bold mb-2">{member.name}</h3>
+                                        <p className="text-gray-600 mb-4">{member.position}</p>
+                                        <p className="text-gray-700">{member.message}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </MessageSlider>
+                </div>
+            </section>
+            <section id="content" className="py-12 bg-gray-100 shadow-lg">
+                <div className="container mx-auto px-4">
+                    <div className="flex flex-wrap md:flex-nowrap">
+                        <div className="w-full md:w-1/2 md:mb-0">
+                            <h2 className="text-3xl font-bold text-gray-800">Founder <strong>Message</strong></h2>
+                            <p className="mt-4 text-gray-600 text-justify">
+                                Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
+                            </p>
+                            <p className="mt-4 text-gray-600 text-justify">
+                                Iudico definiebas eos ea, dicat inermis hendrerit vel ei, legimus copiosae quo at. Per utinam corrumpit prodesset te, liber praesent eos an. An prodesset neglegentur qui, usu ancillae posidonium in, mea ex eros animal scribentur. Et simul fabellas sit.
+                                Populo inimicus ne est.
+                            </p>
+                            <p className="mt-4 text-gray-600 text-justify">
+                                Alii wisi phaedrum quo te, duo cu alia neglegentur. Quo nonumy detraxit cu, viderer reformidans ut eos, lobortis euripidis posidonium et usu. Sed meis bonorum minimum cu, stet aperiam qualisque eu vim, vide luptatum ei nec. Ei nam wisi labitur mediocrem.
+                                Nam saepe appetere ut, veritus graecis minimum no vim. Vidisse impedit id per.
+                            </p>
+                        </div>
+                        <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
+                            <div className="flex flex-col items-center md:items-end w-full px-2 mb-4">
+                                <img src="/akijuddin.jpg" alt="Founders Image" className="w-full rounded-lg shadow-md" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
             <div className="bg-gray-200 py-8">
                 <div className="container mx-auto">
                     <div className="text-center mb-8">
@@ -120,35 +168,6 @@ export default function Home({ product }) {
                     </ul>
                 </div>
             </div>
-
-            <section id="content" className="py-12 bg-gray-100 shadow-lg">
-                <div className="container mx-auto px-4">
-                    <div className="flex flex-wrap md:flex-nowrap">
-                        <div className="w-full md:w-1/2 md:mb-0">
-                            <h2 className="text-3xl font-bold text-gray-800">Founder <strong>Message</strong></h2>
-                            <p className="mt-4 text-gray-600 text-justify">
-                                Ei mel semper vocent persequeris, nominavi patrioque vituperata id vim, cu eam gloriatur philosophia deterruisset. Meliore perfecto repudiare ea nam, ne mea duis temporibus. Id quo accusam consequuntur, eum ea debitis urbanitas. Nibh reformidans vim ne.
-                            </p>
-                            <p className="mt-4 text-gray-600 text-justify">
-                                Iudico definiebas eos ea, dicat inermis hendrerit vel ei, legimus copiosae quo at. Per utinam corrumpit prodesset te, liber praesent eos an. An prodesset neglegentur qui, usu ancillae posidonium in, mea ex eros animal scribentur. Et simul fabellas sit.
-                                Populo inimicus ne est.
-                            </p>
-                            <p className="mt-4 text-gray-600 text-justify">
-                                Alii wisi phaedrum quo te, duo cu alia neglegentur. Quo nonumy detraxit cu, viderer reformidans ut eos, lobortis euripidis posidonium et usu. Sed meis bonorum minimum cu, stet aperiam qualisque eu vim, vide luptatum ei nec. Ei nam wisi labitur mediocrem.
-                                Nam saepe appetere ut, veritus graecis minimum no vim. Vidisse impedit id per.
-                            </p>
-                        </div>
-                        <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
-                            <div className="flex flex-col items-center md:items-end w-full px-2 mb-4">
-                                <img src="/akijuddin.jpg" alt="Founders Image" className="w-full rounded-lg shadow-md" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
 
             {/* Portfolio */}
             <div id="portfolio" className="bg-gray-100 py-12">
@@ -315,26 +334,6 @@ export default function Home({ product }) {
                             See More <i className="fa fa-arrow-right ml-2"></i>
                         </a>
                     </div>
-                </div>
-            </section>
-
-            <section className="py-12 bg-gray-100">
-                <div className="container mx-auto overflow-hidden">
-                    <h2 className="text-3xl font-bold text-center mb-8">Board Member Messages</h2>
-                    <MessageSlider {...settings}>
-                        {boardMembers.map((member, index) => (
-                            <div key={index} className="flex justify-center p-6">
-                                <div className="bg-white rounded-lg shadow-md overflow-hidden text-center">
-                                <img src={member.image} alt={member.name} className="w-28 h-28 object-cover rounded-full mx-auto mt-4" />
-                                    <div className="p-6">
-                                        <h3 className="text-xl font-bold mb-2">{member.name}</h3>
-                                        <p className="text-gray-600 mb-4">{member.position}</p>
-                                        <p className="text-gray-700">{member.message}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </MessageSlider>
                 </div>
             </section>
         </>
