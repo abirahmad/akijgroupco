@@ -173,7 +173,7 @@ const Header = () => {
               <li>
                 <Link
                   className="page-scroll text-gray-700 hover:text-blue-500"
-                  href="/contact"
+                  href="/career"
                 >
                   Career
                 </Link>
