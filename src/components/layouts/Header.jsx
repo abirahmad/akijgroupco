@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 header-area">
-      <div className="hidden sm:flex justify-between items-center py-3 px-6 bg-gradient-to-r from-blue-700 to-indigo-600 text-white shadow-md">
+      <div className="hidden sm:flex justify-between items-center py-3 px-6 bg-gradient-to-r from-blue-400 to-indigo-200 text-grey-400 shadow-md">
         <div className="flex space-x-6">
           <a
             href="tel:+1234567890"
@@ -65,7 +65,7 @@ const Header = () => {
         </nav>
       </div>
 
-      <div id="sticker" className="bg-white shadow-md">
+      <div id="sticker" className="bg-white shadow-lg via-transparent">
         <div className="container mx-auto px-4 py-4 flex sm:justify-between sm:items-center">
           <div className="flex items-center">
             <button
@@ -94,7 +94,7 @@ const Header = () => {
             <ul className="nav flex flex-col lg:flex-row items-center lg:space-x-4">
               <li className="active">
                 <Link
-                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
                   href="/"
                 >
                   Home
@@ -102,7 +102,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
                   href="/about"
                 >
                   About
@@ -110,7 +110,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
                   href="/brands"
                 >
                   Brands
@@ -118,7 +118,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
                   href="/news-events"
                 >
                   News & Event
@@ -126,7 +126,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
                   href="/career"
                 >
                   Career
@@ -134,7 +134,7 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className="page-scroll text-gray-700 hover:text-white hover:bg-blue-500 px-2 py-2 rounded-lg"
+                  className="page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
                   href="/contact"
                 >
                   Contact
