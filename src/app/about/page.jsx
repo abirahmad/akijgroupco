@@ -4,6 +4,7 @@ const AboutSection = () => (
     <>
         <section className="bg-gray-100 py-10">
             <div className="container mx-auto px-4">
+            <h1 className="bg-white py-2 text-3xl font-bold mb-8 text-center">Our Mission & Vision</h1>
                 <div className="flex flex-wrap items-stretch justify-center">
                     <div className="xl:w-1/2 lg:w-1/2 md:w-full bg-white p-8 mb-8 md:mb-0">
                         <div className="max-w-lg mx-auto">
@@ -34,6 +35,7 @@ const AboutSection = () => (
         </section>
         <section className="bg-gray-100 py-8">
             <div className="container mx-auto px-4">
+            <h1 className="bg-white py-2 text-3xl font-bold mb-8 text-center">Gallery</h1>
                 <div className="flex flex-wrap justify-center">
                     <div className="w-full">
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2">
