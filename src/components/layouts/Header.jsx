@@ -3,8 +3,6 @@ import { useState } from "react";
 import {
   FaFacebook,
   FaTwitter,
-  FaGoogle,
-  FaPinterest,
   FaPhone,
   FaEnvelope,
   FaUser,
@@ -82,10 +80,7 @@ const Header = () => {
               className="navbar-brand page-scroll sticky-logo text-center"
               href="/"
             >
-              <h1 className="text-2xl font-bold">
-                <span className="text-blue-500">Akij</span>
-                <span className="text-black">Group</span>
-              </h1>
+              <img className="h-[40px]" src="/logo.png" alt="Gallery Image 4" loading="lazy" />
             </a>
           </div>
           <nav
