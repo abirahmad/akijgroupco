@@ -54,18 +54,17 @@ export default function Contact() {
                     </div>
                     <div className="flex flex-wrap mt-8">
                         {/* Start Google Map */}
-                        <div className="w-full md:w-1/2 p-4">
+                        <div className="w-full lg:w-1/2 p-4">
                             {/* Start Map */}
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.3425704517285!2d90.42033057221254!3d23.770812529865744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c778d94ba6d1%3A0x89051c19123ad2d4!2sAkij%20House%2C%20Bir%20Uttam%20Mir%20Shawkat%20Sarak%2C%20Dhaka%201208!5e0!3m2!1sen!2sbd!4v1720400281512!5m2!1sen!2sbd"
-                                width={700}
+                                width="100%"
                                 height={450}
                                 style={{ border: 0 }}
                                 allowFullScreen=""
                                 loading="lazy"
                                 referrerPolicy="no-referrer-when-downgrade"
                             />
-
                             {/* End Map */}
                         </div>
                         {/* End Google Map */}
@@ -137,6 +136,5 @@ export default function Contact() {
                 </div>
             </div>
         </div>
-
-    )
+    );
 }
