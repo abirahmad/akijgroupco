@@ -45,29 +45,24 @@ export default function Home({ product }) {
         <>
             <Slider />
             <section className="py-20 bg-gradient-to-r from-blue-200 via-white to-blue-200">
-    <div className="container mx-auto overflow-hidden px-4">
-        <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">Board Member Messages</h2>
-        <MessageSlider {...settings}>
-            {boardMembers.map((member, index) => (
-                <div key={index} className="flex justify-center p-4 sm:p-6">
-                    <div className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col sm:flex-row items-center text-left">
-                        <img 
-                            src={member.image} 
-                            alt={member.name} 
-                            className="w-full sm:w-48 h-48 object-cover mx-4 my-4 rounded-lg" 
-                        />
-                        <div className="p-4 sm:p-6 flex flex-col items-center text-center sm:items-start sm:text-left">
-                            <h3 className="text-2xl font-bold mb-2 text-gray-800">{member.name}</h3>
-                            <p className="text-gray-500 mb-4 italic">{member.position}</p>
-                            <p className="text-gray-700 leading-relaxed">{member.message}</p>
-                        </div>
-                    </div>
+                <div className="container mx-auto overflow-hidden">
+                    <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">Board Member Messages</h2>
+                    <MessageSlider {...settings}>
+                        {boardMembers.map((member, index) => (
+                            <div key={index} className="flex justify-center p-6">
+                                <div className="bg-white rounded-lg shadow-xl overflow-hidden flex items-center text-left">
+                                    <img src={member.image} alt={member.name} className="w-90 h-85 object-cover mx-4 my-4 rounded-lg" />
+                                    <div className="p-6 flex flex-col items-center text-center">
+                                        <h3 className="text-2xl font-bold mb-2 text-gray-800">{member.name}</h3>
+                                        <p className="text-gray-500 mb-4 italic">{member.position}</p>
+                                        <p className="text-gray-700 leading-relaxed">{member.message}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </MessageSlider>
                 </div>
-            ))}
-        </MessageSlider>
-    </div>
-</section>
-
+            </section>
             <section id="content" className="py-12 bg-gray-100 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200">
                 <div className="container mx-auto px-4">
                     <div className="flex flex-wrap md:flex-nowrap">
