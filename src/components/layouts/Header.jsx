@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <>
+    <div className="sticky top-0 z-50">
       {" "}
       <div className="hidden sm:flex justify-between items-center py-3 px-6 bg-gradient-to-r from-blue-400 to-indigo-200 text-grey-400 shadow-md">
         <div className="flex space-x-2">
@@ -78,37 +78,37 @@ const Navbar = () => {
             <div className="hidden md:flex md:items-center md:space-x-4">
               <Link
                 href="/home"
-                className="text-lg page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
+                className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="text-lg page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
+                className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 About
               </Link>
               <Link
                 href="/brands"
-                className="text-lg page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
+                className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Brands
               </Link>
               <Link
                 href="/news-events"
-                className="text-lg page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
+                className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 News Events
               </Link>
               <Link
                 href="/career"
-                className="text-lg page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
+                className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Career
               </Link>
               <Link
                 href="/contact"
-                className="text-lg page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
+                className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Contact
               </Link>
@@ -129,37 +129,37 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link
                 href="/home"
-                className="block text-lg"
+                className="block "
               >
                 Home
               </Link>
               <Link
                 href="/about"
-                className="block text-lg"
+                className="block "
               >
                 About
               </Link>
               <Link
                 href="/brands"
-                className="block text-lg"
+                className="block "
               >
                 Brands
               </Link>
               <Link
                 href="/news-events"
-                className="block text-lg"
+                className="block "
               >
                 News Events
               </Link>
               <Link
                 href="/career"
-                className="block text-lg"
+                className="block "
               >
                 Career
               </Link>
               <Link
                 href="/contact"
-                className="block text-lg"
+                className="block "
               >
                 Contact
               </Link>
@@ -167,7 +167,7 @@ const Navbar = () => {
           </div>
         )}
       </nav>
-    </>
+    </div>
   );
 };
 
