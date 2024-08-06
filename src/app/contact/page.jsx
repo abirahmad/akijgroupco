@@ -1,9 +1,9 @@
 import React from 'react';
 import { FaMobile, FaLocationArrow, FaRegEnvelope } from "react-icons/fa";
 
-export default function contact() {
+export default function Contact() {
     return (
-        <div id="contact" className="contact-area">
+        <div id="contact" className="contact-area bg-gradient-to-r from-blue-200 via-white to-blue-200">
             <div className="contact-inner area-padding">
                 <div className="contact-overly"></div>
                 <div className="container mx-auto p-4">
