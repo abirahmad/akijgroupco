@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { FaBars, FaTimes } from "react-icons/fa";
 import {
@@ -11,13 +11,13 @@ import {
   FaGooglePlus,
 } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ setting }) => {
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <div className="sticky top-0 z-50">
       {" "}
@@ -72,7 +72,8 @@ const Navbar = () => {
           <div className="flex justify-between h-16">
             <div className="flex-shrink-0 flex items-center">
               <Link href="/">
-                <img src="/logo.png" alt="Logo" className="w-36" />
+                {/* <img src="/logo.png" alt="Logo" className="w-36" /> */}
+                <img src={setting.logo_url} alt="Logo" className="w-36" />
               </Link>
             </div>
             <div className="hidden md:flex md:items-center md:space-x-4">
@@ -83,36 +84,35 @@ const Navbar = () => {
                 Home
               </Link>
               <Link
-                href="/about"
+                href="#about"
                 className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 About
               </Link>
               <Link
-                href="/brands"
+                href="#brands"
                 className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Brands
               </Link>
               <Link
-                href="/news-events"
+                href="#newsEvents"
                 className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 News Events
               </Link>
               <Link
-                href="/career"
+                href="#career"
                 className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Career
               </Link>
               <Link
-                href="/contact"
+                href="#contact"
                 className=" page-scroll text-gray-700 hover:text-white hover:bg-gradient-to-r from-blue-400 to-indigo-200 px-2 py-2 rounded-lg"
               >
                 Contact
               </Link>
-            
             </div>
             <div className="flex md:hidden">
               <button
@@ -127,40 +127,22 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-                href="/home"
-                className="block "
-              >
+              <Link href="/home" className="block ">
                 Home
               </Link>
-              <Link
-                href="/about"
-                className="block "
-              >
+              <Link href="/about" className="block ">
                 About
               </Link>
-              <Link
-                href="/brands"
-                className="block "
-              >
+              <Link href="/brands" className="block ">
                 Brands
               </Link>
-              <Link
-                href="/news-events"
-                className="block "
-              >
+              <Link href="/news-events" className="block ">
                 News Events
               </Link>
-              <Link
-                href="/career"
-                className="block "
-              >
+              <Link href="/career" className="block ">
                 Career
               </Link>
-              <Link
-                href="/contact"
-                className="block "
-              >
+              <Link href="/contact" className="block ">
                 Contact
               </Link>
             </div>

@@ -1,19 +1,18 @@
-'use client'
+"use client";
 import ListCard from "../../components/ListCard";
-
 
 const jobData = [
   {
-    title: 'Software Engineer',
-    description: 'Develop and maintain web applications.',
+    title: "Software Engineer",
+    description: "Develop and maintain web applications.",
   },
   {
-    title: 'Product Manager',
-    description: 'Lead product development and strategy.',
+    title: "Product Manager",
+    description: "Lead product development and strategy.",
   },
   {
-    title: 'UX Designer',
-    description: 'Design user interfaces and experiences.',
+    title: "UX Designer",
+    description: "Design user interfaces and experiences.",
   },
 ];
 
@@ -23,8 +22,13 @@ export default function Career() {
   };
 
   return (
-    <div className="px-16 py-16 bg-gradient-to-r from-blue-200 via-white to-blue-200">
-      <h1 className="bg-white py-2 text-3xl font-bold mb-8 text-center">Job Lists</h1>
+    <div
+      className="px-16 py-16 bg-gradient-to-r from-blue-200 via-white to-blue-200"
+      id="career"
+    >
+      <h1 className="bg-white py-2 text-3xl font-bold mb-8 text-center">
+        Job Lists
+      </h1>
       {jobData.map((job, index) => (
         <ListCard
           key={index}

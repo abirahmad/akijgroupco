@@ -1,22 +1,38 @@
-import Slider from "../components/layouts/Slider";
-import Header from "../components/layouts/Header";
-import Footer from "../components/layouts/Footer";
+"use client";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Index from "../components/Home";
-import Image from "next/image";
+import Loading from "../components/Loading";
 
-export default async function Home() {
+export default function Home() {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
 
-  const products =await fetchProducts();
-  console.log('products', products)
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/sites`;
+        const response = await axios.get(apiUrl);
+        console.log("response.data :>> ", response.data);
+        setData(response.data);
+      } catch (error) {
+        console.error("Failed to fetch data", error);
+        setError(error.message);
+      }
+    }
+
+    fetchData();
+  }, []);
+
+  console.log("data-", data);
+  if (!data) {
+    return (
+     <Loading/>
+    );
+  }
   return (
-   <>
-     <Index product={products}/>
-   </>
+    <>
+      <Index data={data} />
+    </>
   );
-}
-
-async function fetchProducts(){
-  const productsResponse = await fetch(`https://randomuser.me/api/`);
-  return productsResponse.json();
-
 }
