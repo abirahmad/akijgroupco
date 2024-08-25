@@ -1,4 +1,7 @@
 "use client";
+import AOS from "aos";
+
+import 'aos/dist/aos.css'; // Import AOS styles
 import { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import "slick-carousel/slick/slick.css";
@@ -15,6 +18,11 @@ export default function RootLayout({ children }) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    AOS.init({
+      duration: 1000, // Duration of the animation in milliseconds
+      easing: "ease-in-out", // Easing function for the animation
+      once: true, // Whether animation should happen only once - while scrolling down
+    });
     async function fetchProducts() {
       try {
         const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/sites`;
@@ -49,7 +57,7 @@ export default function RootLayout({ children }) {
     return (
       <html lang="en">
         <body className={inter.className}>
-         <Loading/>
+          <Loading />
         </body>
       </html>
     );

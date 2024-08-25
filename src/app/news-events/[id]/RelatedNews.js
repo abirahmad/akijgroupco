@@ -3,7 +3,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import axios from "axios";
 export default function RelatedNews() {
-  const [boardMembers, setBoardMembers] = useState([]);
+  const [relatedNews, setRelatedNews] = useState([]);
   useEffect(() => {
     getmembers();
   }, []);
@@ -13,7 +13,7 @@ export default function RelatedNews() {
 
     await axios
       .get(apiUrl)
-      .then((res) => setBoardMembers(res.data))
+      .then((res) => setRelatedNews(res.data))
       .catch((err) => console.log("err", err));
   };
 
@@ -24,7 +24,7 @@ export default function RelatedNews() {
     <div className="bg-white p-4 rounded-lg shadow-md md:col-span-4">
       <h3 className="text-2xl font-bold mb-4">Other News</h3>
       <ul>
-        {boardMembers.map((item,i) => (
+        {relatedNews.map((item,i) => (
           <li key={i}  className="border-b border-gray-200 shadow-md p-2 mb-4" onClick={()=>handleGoToDetails(item.id)}>
             <img
               src={item.image}

@@ -70,7 +70,7 @@ export default function Contact({ setting }) {
   return (
     <div
       id="contact"
-      className="contact-area bg-gradient-to-r from-blue-200 via-white to-blue-200"
+      className="contact-area bg-gradient-to-r from-blue-200 via-white to-blue-200" 
     >
       <div className="contact-inner area-padding">
         <div className="contact-overly"></div>
@@ -125,7 +125,7 @@ export default function Contact({ setting }) {
                         rel="noopener noreferrer"
                         className="text-blue-500 hover:underline"
                       >
-                      https://www.akijgroup.co
+                        https://www.akijgroup.co
                       </a>
                     </span>
                   </p>

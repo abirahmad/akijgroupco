@@ -14,7 +14,7 @@ export default function Brands() {
     ];
 
     return (
-        <div className="px-4 py-4 bg-gradient-to-r from-blue-200 via-white to-blue-200" id="brands">
+        <div className="px-4 py-4 bg-gradient-to-r from-blue-200 via-white to-blue-200" id="brands" data-aos="zoom-in" data-aos-duration="1000">
             <h1 className="text-4xl font-bold text-center my-4">Our Brands</h1>
             <h2 className="text-2xl text-center my-4">Quality Uncompromised</h2>
             <div className="container mx-auto flex flex-wrap justify-center gap-8">

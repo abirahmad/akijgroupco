@@ -23,7 +23,7 @@ export default function Career() {
 
   return (
     <div
-      className="px-16 py-16 bg-gradient-to-r from-blue-200 via-white to-blue-200"
+      className="px-16 py-16 bg-gradient-to-r from-blue-200 via-white to-blue-200 "  data-aos="zoom-in" data-aos-duration="1000"
       id="career"
     >
       <h1 className="bg-white py-2 text-3xl font-bold mb-8 text-center">

@@ -3,6 +3,7 @@ import RelatedNews from "./RelatedNews";
 
 export default async function Home({ params }) {
   const product = await fetchProducts(params.id);
+  console.log('product', product)
 
   return (
     <>
@@ -17,7 +18,7 @@ export default async function Home({ params }) {
             />
             <h2 className="text-3xl font-bold mb-2">{product.title}</h2>
             <p className="text-gray-600 mb-4 text-xs">
-              by Author Name on 2024-07-02
+              by {product.author} on {new Date(product.created_at).toLocaleDateString()}
             </p>
             <p className="leading-relaxed mb-4 text-sm">
               {product.short_description}
@@ -38,17 +39,24 @@ export default async function Home({ params }) {
 }
 
 async function fetchProducts(productId) {
-  // const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/product/${productId}`;
-  const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/news-media/${productId}`;
+const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/news-media/${productId}`;
+  console.log('apiUrl :>> ', apiUrl);
   const productsResponse = await fetch(apiUrl);
-  return productsResponse.json();
-}
 
-// Metadata fetching should be done within the Home function or a separate function, not globally
-export async function generateMetadata({ params }) {
-  const product = await fetchProducts(params.id);
-  return {
-    title: product.name,
-    description: product.description,
-  };
+  // Check if the response is OK (status 200)
+  if (!productsResponse.ok) {
+    console.error(`Failed to fetch product: ${productsResponse.statusText}`);
+    return null; // Handle this appropriately in your component
+  }
+
+  // Log the response for debugging
+  const responseText = await productsResponse.text();
+  console.log(responseText);
+
+  try {
+    return JSON.parse(responseText);
+  } catch (error) {
+    console.error("Failed to parse JSON:", error);
+    return null; // Handle this appropriately in your component
+  }
 }

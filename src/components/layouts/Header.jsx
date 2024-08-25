@@ -12,7 +12,6 @@ import {
 } from "react-icons/fa";
 
 const Navbar = ({ setting }) => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -24,18 +23,18 @@ const Navbar = ({ setting }) => {
       <div className="hidden sm:flex justify-between items-center py-3 px-6 bg-gradient-to-r from-blue-400 to-indigo-200 text-grey-400 shadow-md">
         <div className="flex space-x-2">
           <a
-            href="tel:+1234567890"
+            href={`tel:${setting.primary_phone}`}
             className="flex items-center hover:text-yellow-300"
           >
             <FaPhone className="mr-2" />
-            +1234567890
+            {setting.primary_phone}
           </a>
           <a
-            href="mailto:info@yourmail.com"
+            href={`mailto:${setting.primary_email}`}
             className="flex items-center hover:text-yellow-300"
           >
             <FaEnvelope className="mr-2" />
-            info@yourmail.com
+            {setting.primary_email}
           </a>
         </div>
         <nav className="flex items-center space-x-6">
@@ -46,7 +45,7 @@ const Navbar = ({ setting }) => {
           <ul className="hidden md:flex space-x-4">
             <li>
               <a
-                href="https://www.facebook.com/fh5co"
+                href={setting.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-yellow-300"
@@ -55,12 +54,12 @@ const Navbar = ({ setting }) => {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-yellow-300">
+              <a href={setting.youtube} className="hover:text-yellow-300">
                 <FaGooglePlus />
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-yellow-300">
+              <a href={setting.twitter} className="hover:text-yellow-300">
                 <FaTwitter />
               </a>
             </li>

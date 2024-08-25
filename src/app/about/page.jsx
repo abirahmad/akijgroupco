@@ -11,9 +11,9 @@ const AboutSection = ({ setting }) => (
           Our Mission & Vision
         </h1>
         <div className="flex flex-wrap items-stretch justify-center">
-          <div className="xl:w-1/2 lg:w-1/2 md:w-full bg-white p-8 mb-8 md:mb-0">
-            <div className="max-w-lg mx-auto">
-              <p className="text-lg mb-8 leading-relaxed">
+          <div className="xl:w-1/2 lg:w-1/2 md:w-full bg-white p-8 mb-8 md:mb-0  flex justify-center items-center">
+            <div className="max-w-lg mx-auto ">
+              <p className="text-lg mb-8 leading-relaxed ">
                 {setting.about_mission_vision}
               </p>
             </div>

@@ -30,7 +30,7 @@ export default function Home({ data }) {
   return (
     <>
       <Slider banner={banner} />
-      <section className="py-20 bg-gradient-to-r from-blue-200 via-white to-blue-200">
+      <section className="py-20 bg-gradient-to-r from-blue-200 via-white to-blue-200" >
         <div className="container mx-auto overflow-hidden px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800">
             Board Member Messages
@@ -64,7 +64,7 @@ export default function Home({ data }) {
 
       <section
         id="content"
-        className="py-12 bg-gray-100 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200"
+        className="py-12 bg-gray-100 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200" data-aos="zoom-in" data-aos-duration="1000"
       >
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap md:flex-nowrap">

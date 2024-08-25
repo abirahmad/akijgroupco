@@ -8,7 +8,7 @@ export default function NewsAndEvent({ news }) {
   };
 
   return (
-    <div className="p-6 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200" id="newsEvents">
+    <div className="p-6 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200" id="newsEvents" data-aos="zoom-in" data-aos-duration="1000">
       <h1 className="text-center text-5xl font-bold text-gray-800">
         News & Media
       </h1>

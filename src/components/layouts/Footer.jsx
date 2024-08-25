@@ -3,9 +3,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaFacebook, FaTwitter, FaGoogle, FaPinterest } from "react-icons/fa";
 
-const Footer = ({setting}) => {
-
- 
+const Footer = ({ setting }) => {
   return (
     <footer>
       <div className="bg-gray-700 text-gray-400 rounded-2xl shadow-2xl">
@@ -76,49 +74,22 @@ const Footer = ({setting}) => {
             </div>
             <div className="w-full md:w-1/3 px-4 mb-6 md:mb-0">
               <div>
-                <h4 className="text-white text-xl font-semibold">Instagram</h4>
-                <div className="flex flex-wrap mt-4">
-                  <a href="#" className="w-1/3 p-1">
-                    <img
-                      src="/img/portfolio/1.jpg"
-                      alt=""
-                      className="w-full h-auto"
-                    />
+                <h4 className="text-white text-xl font-semibold">Link</h4>
+                <div className="  flex flex-col">
+                  <a href="#about" className="w-1/3 p-1">
+                    About
                   </a>
-                  <a href="#" className="w-1/3 p-1">
-                    <img
-                      src="/img/portfolio/2.jpg"
-                      alt=""
-                      className="w-full h-auto"
-                    />
+                  <a href="#brands" className="w-1/3 p-1">
+                    Brands
                   </a>
-                  <a href="#" className="w-1/3 p-1">
-                    <img
-                      src="/img/portfolio/3.jpg"
-                      alt=""
-                      className="w-full h-auto"
-                    />
+                  <a href="#newsEvents" className="w-1/3 p-1">
+                    News Events
                   </a>
-                  <a href="#" className="w-1/3 p-1">
-                    <img
-                      src="/img/portfolio/4.jpg"
-                      alt=""
-                      className="w-full h-auto"
-                    />
+                  <a href="#career" className="w-1/3 p-1">
+                    Career
                   </a>
-                  <a href="#" className="w-1/3 p-1">
-                    <img
-                      src="/img/portfolio/5.jpg"
-                      alt=""
-                      className="w-full h-auto"
-                    />
-                  </a>
-                  <a href="#" className="w-1/3 p-1">
-                    <img
-                      src="/img/portfolio/6.jpg"
-                      alt=""
-                      className="w-full h-auto"
-                    />
+                  <a href="#contact" className="w-1/3 p-1">
+                    Contact
                   </a>
                 </div>
               </div>
