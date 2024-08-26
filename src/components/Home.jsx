@@ -12,7 +12,7 @@ import Career from "../app/career/page";
 import Contact from "../app/contact/page";
 
 export default function Home({ data }) {
-  const { message, banner, news, setting } = data;
+  const { message, banner, news, setting,logos,brands } = data;
   const [filter, setFilter] = useState("*");
 
   const handleFilter = (category) => {
@@ -24,8 +24,8 @@ export default function Home({ data }) {
       <Slider banner={banner} />
 
       <BoardMemberMessage message={message} />
-      <AkijMessage />
-      <Brands />
+      <AkijMessage setting={setting} />
+      <Brands brands={brands} logos={logos} />
       <AboutSection setting={setting} />
       <NewsAndEvent news={news} />
       <Career />

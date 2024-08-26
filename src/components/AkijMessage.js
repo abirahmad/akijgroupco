@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function AkijMessage() {
+export default function AkijMessage({setting}) {
   return (
     <div  
     id="content"
@@ -11,8 +11,11 @@ export default function AkijMessage() {
         <div className="w-full md:w-1/2 md:mb-0 p-2" data-aos="fade-right">
           <h2 className="text-3xl font-bold text-gray-800">
             Founder <strong>Message</strong>
-          </h2>
-          <p className="mt-4 text-gray-600 text-justify">
+            </h2>
+            <p className="mt-4 text-gray-600 text-justify p-1 ">
+              {setting.custom7}
+            </p>
+          {/* <p className="mt-4 text-gray-600 text-justify">
             Ei mel semper vocent persequeris, nominavi patrioque vituperata
             id vim, cu eam gloriatur philosophia deterruisset. Meliore
             perfecto repudiare ea nam, ne mea duis temporibus. Id quo
@@ -33,7 +36,7 @@ export default function AkijMessage() {
             qualisque eu vim, vide luptatum ei nec. Ei nam wisi labitur
             mediocrem. Nam saepe appetere ut, veritus graecis minimum no
             vim. Vidisse impedit id per.
-          </p>
+          </p> */}
         </div>
         <div data-aos="fade-left" className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col items-center md:items-end w-full px-2 mb-4">

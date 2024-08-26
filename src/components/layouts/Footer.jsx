@@ -15,9 +15,7 @@ const Footer = ({ setting }) => {
                   <span className="text-blue-700">Akij</span>Group
                 </h2>
                 <p className="mt-4">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis.
+                {setting.custom1}
                 </p>
                 <div className="flex space-x-4 mt-4">
                   <a
@@ -53,8 +51,7 @@ const Footer = ({ setting }) => {
                   Information
                 </h4>
                 <p className="mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor.
+                {setting.custom2}
                 </p>
                 <div className="mt-4">
                   <p>

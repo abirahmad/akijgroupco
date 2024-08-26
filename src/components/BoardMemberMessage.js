@@ -12,7 +12,7 @@ export default function BoardMemberMessage({ message }) {
     autoplaySpeed: 3000,
   };
   return (
-    <div>
+    <div className="overflow-hidden">
       <section className="py-20 bg-gradient-to-r from-blue-200 via-white to-blue-200 overflow-hidden">
         <div className="container mx-auto overflow-hidden px-4">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-gray-800">
@@ -21,7 +21,7 @@ export default function BoardMemberMessage({ message }) {
           <MessageSlider {...settings}>
             {message.map((member, index) => (
               <div key={index} className="flex justify-center p-4 md:p-6">
-                <div className="bg-white rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row items-center text-left">
+                <div className="bg-white overflow-hidden rounded-lg shadow-xl overflow-hidden flex flex-col md:flex-row items-center text-left">
                   <img
                     src={member.image}
                     alt={member.name}
