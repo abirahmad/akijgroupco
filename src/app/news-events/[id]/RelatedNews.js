@@ -5,10 +5,10 @@ import axios from "axios";
 export default function RelatedNews() {
   const [relatedNews, setRelatedNews] = useState([]);
   useEffect(() => {
-    getmembers();
+    getMembers();
   }, []);
 
-  const getmembers = async () => {
+  const getMembers = async () => {
     const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/news-media`;
 
     await axios
