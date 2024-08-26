@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCard from "../../components/ProductCard";
 
-export default function Brands({ brands ,logos}) {
+export default function Brands({ brands, logos }) {
   // const brands = [
   //     {
   //         name: 'Our Companies',
@@ -17,8 +17,7 @@ export default function Brands({ brands ,logos}) {
     <div
       className="px-4 py-4 bg-gradient-to-r from-blue-200 via-white to-blue-200"
       id="brands"
-      data-aos="fade-in"
-      data-aos-duration="1000"
+      data-aos="zoom-in" data-aos-duration="1000"
     >
       <h1 className="text-4xl font-bold text-center my-4">Our Brands</h1>
       <h2 className="text-2xl text-center my-4">Quality Uncompromised</h2>
@@ -67,11 +66,11 @@ export default function Brands({ brands ,logos}) {
 
       <div className="container mx-auto px-4 py-4">
         {/* {logos.map((logo, index) => ( */}
-          <div  className="w-full max-w-4xl mx-auto mb-4">
-            <div className="flex justify-center">
-              <ProductCard logos={logos} />
-            </div>
+        <div className="w-full max-w-4xl mx-auto mb-4">
+          <div className="flex justify-center">
+            <ProductCard logos={logos} />
           </div>
+        </div>
         {/* ))} */}
       </div>
     </div>

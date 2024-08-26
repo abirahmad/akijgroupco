@@ -68,11 +68,11 @@ export default function Contact({ setting }) {
     setIsSubmitting(false);
   };
   return (
-    <div
+    <div 
       id="contact"
       className="contact-area bg-gradient-to-r from-blue-200 via-white to-blue-200" 
     >
-      <div className="contact-inner area-padding">
+      <div className="contact-inner area-padding" data-aos="zoom-in" data-aos-duration="1000">
         <div className="contact-overly"></div>
         <div className="container mx-auto p-4">
           <div className="flex justify-center">

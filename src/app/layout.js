@@ -1,7 +1,7 @@
 "use client";
 import AOS from "aos";
 
-import 'aos/dist/aos.css'; // Import AOS styles
+import "aos/dist/aos.css"; // Import AOS styles
 import { useEffect, useState } from "react";
 import { Inter } from "next/font/google";
 import "slick-carousel/slick/slick.css";
@@ -28,12 +28,12 @@ export default function RootLayout({ children }) {
     async function fetchProducts() {
       try {
         const apiUrl = `${process.env.NEXT_PUBLIC_API_URL}/sites`;
-        const productsResponse = await fetch(apiUrl);
-        if (!productsResponse.ok) {
+        const dataResponse = await fetch(apiUrl);
+        if (!dataResponse.ok) {
           throw new Error("Failed to fetch products");
         }
-        const productsData = await productsResponse.json();
-        setProducts(productsData);
+        const sitesData = await dataResponse.json();
+        setProducts(sitesData);
       } catch (error) {
         console.error("Failed to fetch products", error);
         setError(error.message);
