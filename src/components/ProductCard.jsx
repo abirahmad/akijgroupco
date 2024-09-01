@@ -1,24 +1,24 @@
 import React from "react";
 
-const logoCard = ({ logos }) => {
+const LogoCard = ({ logos }) => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4">
-      {logos.map((logo, index) => (
-        <div
-          key={index}
-          className="max-w-md rounded bg-white overflow-hidden hover:scale-110 transition ease-in-out delay-150 shadow-lg p-4"
-        >
-          <img
-            className="w-[150px] object-cover "
-            src={logo.image}
-            alt={logo.name}
-            srcSet={`${logo.image} 320w, ${logo.image} 640w, ${logo.image} 1280w`}
-            sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 100vw"
-          />
-        </div>
-      ))}
+    <div className="bg-gradient-to-r from-blue-200 via-white to-blue-200 p-2">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 w-[80%] mx-auto mt-4  rounded-lg shadow-md">
+        {logos.map((logo, index) => (
+          <div
+            key={index}
+            className="flex justify-center items-center p-3 bg-white rounded-md shadow-sm hover:shadow-lg transition-shadow duration-300"
+          >
+            <img
+              src={logo.image}
+              alt={`logo-${index}`}
+              className="object-contain w-[100px] custom-img"
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
 
-export default logoCard;
+export default LogoCard;

@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = ({ setting }) => (
   <div
-    data-aos="zoom-in"
+    data-aos="fade-in"
     data-aos-duration="1000"
     className="bg-gradient-to-r from-blue-200 via-white to-blue-200 py-10"
     id="about"
