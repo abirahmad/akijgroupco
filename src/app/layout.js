@@ -20,8 +20,8 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duration of the animation in milliseconds
-      easing: "ease-in-out", // Easing function for the animation
-      once: false, // Whether animation should happen only once - while scrolling down
+      // easing: "ease-in-out", // Easing function for the animation
+      once: true, // Whether animation should happen only once - while scrolling down
     });
     AOS.refresh();
 

@@ -24,21 +24,21 @@ const Navbar = ({ setting }) => {
         <div className="flex space-x-2">
           <a
             href={`tel:${setting.primary_phone}`}
-            className="flex items-center hover:text-yellow-300"
+            className="flex items-center hover:text-white"
           >
             <FaPhone className="mr-2" />
             {setting.primary_phone}
           </a>
           <a
             href={`mailto:${setting.primary_email}`}
-            className="flex items-center hover:text-yellow-300"
+            className="flex items-center hover:text-white"
           >
             <FaEnvelope className="mr-2" />
             {setting.primary_email}
           </a>
         </div>
         <nav className="flex items-center space-x-6">
-          <a href="#" className="flex items-center hover:text-yellow-300">
+          <a href="#" className="flex items-center hover:text-white">
             <FaUser className="mr-2" />
             Login
           </a>
@@ -48,18 +48,18 @@ const Navbar = ({ setting }) => {
                 href={setting.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-yellow-300"
+                className="hover:text-white"
               >
                 <FaFacebook />
               </a>
             </li>
             <li>
-              <a href={setting.youtube} className="hover:text-yellow-300">
+              <a href={setting.youtube} className="hover:text-white">
                 <FaGooglePlus />
               </a>
             </li>
             <li>
-              <a href={setting.twitter} className="hover:text-yellow-300">
+              <a href={setting.twitter} className="hover:text-white">
                 <FaTwitter />
               </a>
             </li>
