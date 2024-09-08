@@ -5,7 +5,7 @@ export default function AkijMessage({ setting }) {
     <div  data-aos="fade-up"
     data-aos-duration="2000"
       id="content"
-      className="py-12 bg-gray-100 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200"
+      className="py-12 mb-4 bg-gray-100 shadow-lg bg-gradient-to-r from-blue-200 via-white to-blue-200"
     >
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap md:flex-nowrap">
